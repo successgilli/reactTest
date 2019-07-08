@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "node ./app",
     "start-production": "webpack --history-api-fallback --mode production",
     "start-dev": "webpack-dev-server --history-api-fallback --mode development",
     "build": "npm run start-production",
