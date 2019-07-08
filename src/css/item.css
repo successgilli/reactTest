@@ -1,0 +1,22 @@
+.item{
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px dashed grey;
+    font-weight: bold;
+}
+.item:last-child{
+    margin-bottom: 20px;
+}
+.plus{
+    transform: rotate(45deg);
+    transition: 0.5s ease;
+    color: orange;
+}
+.plus:hover{
+    transform: rotate(135deg);
+    color: red;
+    cursor: pointer;
+}
