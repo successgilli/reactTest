@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node ./public/app.js",
-    "start-dev": "webpack-dev-server --history-api-fallback",
-    "build": "babel app.js -d ./public && webpack --history-api-fallback --mode production"
+    "start": "node ./public/app.js",
+    "start-production": "webpack --history-api-fallback --mode production",
+    "start-dev": "webpack-dev-server --history-api-fallback --mode development",
+    "build": "babel app.js -d ./public"
   },
   "repository": {
     "type": "git",
