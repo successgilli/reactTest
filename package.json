@@ -4,11 +4,13 @@
   "description": "learn react",
   "main": "index.js",
   "scripts": {
+    "serve": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./public/app.js",
     "start-production": "webpack --history-api-fallback --mode production",
     "start-dev": "webpack-dev-server --history-api-fallback --mode development",
-    "build": "babel app.js -d ./public"
+    "build": "babel app.js -d ./public",
+    "heroku-postbuild": "npm run build && npm run start-production"
   },
   "repository": {
     "type": "git",
@@ -39,5 +41,6 @@
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  }
+  },
+  "heroku-run-build-script": true
 }
