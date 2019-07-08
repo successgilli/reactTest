@@ -7,7 +7,7 @@
     "serve": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./public/app",
-    "start-production": "webpack --history-api-fallback --mode production && node ./public/app",
+    "start-production": "webpack --history-api-fallback --mode production",
     "start-dev": "webpack-dev-server --history-api-fallback --mode development",
     "build": "babel app.js -d ./public",
     "heroku-postbuild": "npm run build && npm run start-production"
