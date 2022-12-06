@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/successgilli/reactTest#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"
